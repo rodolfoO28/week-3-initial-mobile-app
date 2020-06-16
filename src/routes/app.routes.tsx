@@ -1,5 +1,8 @@
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
+import {
+  createStackNavigator,
+  CardStyleInterpolators,
+} from '@react-navigation/stack';
 
 import Dashboard from '../pages/Dashboard';
 import CreateAppointment from '../pages/CreateAppointment';
@@ -15,6 +18,7 @@ const AppRoutes: React.FC = () => {
       screenOptions={{
         headerShown: false,
         cardStyle: { backgroundColor: '#312e38' },
+        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
       }}
     >
       <App.Screen name="Dashboard" component={Dashboard} />
