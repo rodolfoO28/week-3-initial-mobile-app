@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Feather';
+
 import api from '../../services/api';
 
 import { useAuth } from '../../hooks/auth';
@@ -46,7 +47,7 @@ const Dashboard: React.FC = () => {
     api.get('providers').then((response) => {
       setProviders(response.data);
     });
-  }, [setProviders]);
+  }, []);
 
   return (
     <Container>
