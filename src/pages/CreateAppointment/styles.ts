@@ -72,3 +72,27 @@ export const ProviderName = styled.Text<ProviderNameProps>`
   font-size: 16px;
   color: ${(props) => (props.selected ? '#232129' : '#f4ede8')};
 `;
+
+export const Calendar = styled.View``;
+
+export const CalendarTitle = styled.Text`
+  font-family: 'RobotoSlab-Medium';
+  color: #f4ede8;
+  font-size: 24px;
+  margin: 0 24px 24px;
+`;
+
+export const CalendarDatePickerButton = styled(RectButton)`
+  height: 46px;
+  background: #ff9900;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 24px;
+`;
+
+export const CalendarDatePickerButtonText = styled.Text`
+  font-family: 'RobotoSlab-Medium';
+  font-size: 16px;
+  color: #232129;
+`;
