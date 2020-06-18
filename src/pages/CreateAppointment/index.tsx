@@ -108,6 +108,14 @@ const CreateAppointment: React.FC = () => {
     setSelectedHour(hour);
   }, []);
 
+  const providerName = useMemo(() => {
+    const provider = providers.find(
+      (providerItem) => providerItem.id === selectedProvider,
+    );
+
+    return provider?.name ?? '';
+  }, [providers, selectedProvider]);
+
   const handleCreateAppointment = useCallback(async () => {
     try {
       const date = new Date(selectedDate);
@@ -119,14 +127,17 @@ const CreateAppointment: React.FC = () => {
         date,
       });
 
-      navigate('AppointmentCreated', { date: date.getTime() });
+      navigate('AppointmentCreated', {
+        date: date.getTime(),
+        provider: providerName,
+      });
     } catch (err) {
       Alert.alert(
         'Erro ao criar agendamento',
         'Ocorreu um erro ao tentar criar o agendamento, tente novamente.',
       );
     }
-  }, [navigate, selectedDate, selectedHour, selectedProvider]);
+  }, [navigate, selectedDate, selectedHour, selectedProvider, providerName]);
 
   const morningAvailability = useMemo(() => {
     return availability

@@ -36,6 +36,7 @@
     "react/jsx-props-no-spreading": "off",
     "no-unused-expressions": "off",
     "import/prefer-default-export": "off",
+    "import/no-duplicates": "off",
     "react/jsx-one-expressions-per-line": "off",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/explicit-function-return-type":[
