@@ -13,6 +13,7 @@ import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
 import ImagePicker from 'react-native-image-picker';
+import ImageEditor from '@react-native-community/image-editor';
 
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import api from '../../services/api';
@@ -155,27 +156,38 @@ const Profile: React.FC = () => {
           return;
         }
 
-        const source = {
-          type: response.type,
-          name: response.fileName,
-          uri: response.uri,
-        };
+        ImageEditor.cropImage(response.uri, {
+          offset: {
+            x: 0,
+            y: 0,
+          },
+          size: {
+            width: 400,
+            height: 400,
+          },
+        }).then((url) => {
+          const source = {
+            type: response.type,
+            name: response.fileName,
+            uri: url,
+          };
 
-        const data = new FormData();
-        data.append('avatar', source);
+          const data = new FormData();
+          data.append('avatar', source);
 
-        api
-          .patch('users/avatar', data)
-          .then((apiResponse) => {
-            updateUser(apiResponse.data);
-            Alert.alert('Avatar atualizado com sucesso!');
-          })
-          .catch(() => {
-            Alert.alert(
-              'Error na atualização do avatar',
-              'Ocorreu um erro ao fazer a troca do seu avatar, tente novamente.',
-            );
-          });
+          api
+            .patch('users/avatar', data)
+            .then((apiResponse) => {
+              updateUser(apiResponse.data);
+              Alert.alert('Avatar atualizado com sucesso!');
+            })
+            .catch(() => {
+              Alert.alert(
+                'Error na atualização do avatar',
+                'Ocorreu um erro ao fazer a troca do seu avatar, tente novamente.',
+              );
+            });
+        });
       },
     );
   }, [updateUser]);
