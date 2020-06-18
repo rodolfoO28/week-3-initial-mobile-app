@@ -1,6 +1,6 @@
 <img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios.png" />
 
-# 🚀️ Week 3 - Initial Mobile App
+# 🚀️ Initial Mobile App
 
 Project of week 3, create initial mobile app with react native. Follow the topics covered below:
 - Structure and standards
@@ -22,3 +22,30 @@ Project of week 3, create initial mobile app with react native. Follow the topic
   - SignUp
   - Authentication
   - Private Routes
+
+# 🚀️ Finish Mobile App
+- Adjuts API
+  - Intro
+  - Serialize providers data
+  - Adjust links of images
+  - Create pages and routes
+- Dashboard
+  - Create Header
+  - Find all providor from API
+  - List providers in page
+- Appointment
+  - Create appointment page
+  - Changing between providers
+  - Create picker
+  - Find availability providers from API
+  - Debug with Flipper
+  - Show availability providers by date
+  - Show availability providers by time
+  - Create new appointment
+- Appointment created
+  - Create appointment created page
+  - Formatted data
+- Profile
+  - Create profile page
+  - Update profile data
+  - Update avatar
