@@ -1,5 +1,4 @@
 import styled from 'styled-components/native';
-import { Platform } from 'react-native';
 
 export const Container = styled.View`
   flex: 1;
@@ -19,12 +18,26 @@ export const Title = styled.Text`
 `;
 
 export const UserAvatarButton = styled.TouchableOpacity`
-  margin-top: 0;
+  width: 186px;
+  height: 186px;
+  margin: 0 auto;
+  position: relative;
 `;
 
 export const UserAvatar = styled.Image`
   width: 186px;
   height: 186px;
   border-radius: 93px;
-  align-self: center;
+`;
+
+export const CameraIcon = styled.View`
+  background: #ff9900;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 `;

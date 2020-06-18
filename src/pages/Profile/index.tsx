@@ -12,6 +12,7 @@ import Icon from 'react-native-vector-icons/Feather';
 import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
+import ImagePicker from 'react-native-image-picker';
 
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import api from '../../services/api';
@@ -29,6 +30,7 @@ import {
   Title,
   UserAvatarButton,
   UserAvatar,
+  CameraIcon,
 } from './styles';
 
 interface ProfileFormData {
@@ -132,8 +134,51 @@ const Profile: React.FC = () => {
         );
       }
     },
-    [goBack],
+    [goBack, updateUser],
   );
+
+  const handleUpdateAvatar = useCallback(() => {
+    ImagePicker.showImagePicker(
+      {
+        title: 'Selecione um avatar',
+        cancelButtonTitle: 'Cancelar',
+        takePhotoButtonTitle: 'Usar camera',
+        chooseFromLibraryButtonTitle: 'Escolher da galeria',
+      },
+      (response) => {
+        if (response.didCancel) {
+          return;
+        }
+
+        if (response.error) {
+          Alert.alert('Erro ao atualizar seu avatar.');
+          return;
+        }
+
+        const source = {
+          type: response.type,
+          name: response.fileName,
+          uri: response.uri,
+        };
+
+        const data = new FormData();
+        data.append('avatar', source);
+
+        api
+          .patch('users/avatar', data)
+          .then((apiResponse) => {
+            updateUser(apiResponse.data);
+            Alert.alert('Avatar atualizado com sucesso!');
+          })
+          .catch(() => {
+            Alert.alert(
+              'Error na atualização do avatar',
+              'Ocorreu um erro ao fazer a troca do seu avatar, tente novamente.',
+            );
+          });
+      },
+    );
+  }, [updateUser]);
 
   return (
     <>
@@ -151,8 +196,11 @@ const Profile: React.FC = () => {
               <Icon name="chevron-left" size={24} color="#999591" />
             </BackButton>
 
-            <UserAvatarButton onPress={() => {}}>
+            <UserAvatarButton onPress={handleUpdateAvatar}>
               <UserAvatar source={{ uri: user.avatar_url }} />
+              <CameraIcon>
+                <Icon name="camera" size={20} color="#312e38" />
+              </CameraIcon>
             </UserAvatarButton>
             <View>
               <Title>Meu perfil</Title>
