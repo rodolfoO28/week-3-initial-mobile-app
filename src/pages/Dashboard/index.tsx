@@ -57,12 +57,13 @@ const Dashboard: React.FC = () => {
           <UserName>{user.name}</UserName>
         </HeaderTitle>
 
-        <ProfileButton onPress={navigateToProfile}>
+        <ProfileButton testID="profile-button" onPress={navigateToProfile}>
           <UserAvatar source={{ uri: user.avatar_url }} />
         </ProfileButton>
       </Header>
 
       <ProvidersList
+        testID="provider-container"
         data={providers}
         keyExtractor={(provider) => provider.id}
         ListHeaderComponent={
@@ -70,6 +71,7 @@ const Dashboard: React.FC = () => {
         }
         renderItem={({ item: provider }) => (
           <ProviderContainer
+            testID={`provider-container-${provider.id}`}
             onPress={() => navigateToCreateAppointment(provider.id)}
           >
             <ProviderAvatar source={{ uri: provider.avatar_url }} />

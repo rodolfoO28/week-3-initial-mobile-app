@@ -45,7 +45,7 @@ const AppointmentCreated: React.FC = () => {
       <Title>Agendamento concluído</Title>
       <Description>{formattedDescription}</Description>
 
-      <OkButton onPress={handleOkPressed}>
+      <OkButton testID="ok-button" onPress={handleOkPressed}>
         <OkButtonText>Ok</OkButtonText>
       </OkButton>
     </Container>

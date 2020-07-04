@@ -85,6 +85,7 @@ const SignIn: React.FC = () => {
   return (
     <>
       <KeyboardAvoidingView
+        testID="keyborad-view"
         enabled
         style={{ flex: 1 }}
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
@@ -135,7 +136,10 @@ const SignIn: React.FC = () => {
         </ScrollView>
       </KeyboardAvoidingView>
 
-      <CreateAccountButton onPress={() => navigation.navigate('SignUp')}>
+      <CreateAccountButton
+        testID="sign-up-button"
+        onPress={() => navigation.navigate('SignUp')}
+      >
         <Icon name="log-in" size={20} color="#ff9000" />
         <CreateAccountButtonText>Criar uma conta</CreateAccountButtonText>
       </CreateAccountButton>

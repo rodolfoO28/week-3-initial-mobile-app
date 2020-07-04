@@ -84,6 +84,7 @@ const SignUp: React.FC = () => {
   return (
     <>
       <KeyboardAvoidingView
+        testID="keyborad-view"
         enabled
         style={{ flex: 1 }}
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
@@ -140,7 +141,7 @@ const SignUp: React.FC = () => {
         </ScrollView>
       </KeyboardAvoidingView>
 
-      <BackToSignIn onPress={() => navigation.goBack()}>
+      <BackToSignIn testID="go-back-button" onPress={() => navigation.goBack()}>
         <Icon name="arrow-left" size={20} color="#fff" />
         <BackToSignInText>Voltar para o logon</BackToSignInText>
       </BackToSignIn>

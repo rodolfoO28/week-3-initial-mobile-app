@@ -111,7 +111,7 @@ const Profile: React.FC = () => {
             : {}),
         };
 
-        const response = await api.put('/profile', formData);
+        const response = await api.put('profile', formData);
 
         updateUser(response.data);
 
@@ -166,14 +166,12 @@ const Profile: React.FC = () => {
             height: 400,
           },
         }).then((url) => {
-          const source = {
+          const data = new FormData();
+          data.append('avatar', {
             type: response.type,
             name: response.fileName,
             uri: url,
-          };
-
-          const data = new FormData();
-          data.append('avatar', source);
+          });
 
           api
             .patch('users/avatar', data)
@@ -195,6 +193,7 @@ const Profile: React.FC = () => {
   return (
     <>
       <KeyboardAvoidingView
+        testID="keyborad-view"
         enabled
         style={{ flex: 1 }}
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
@@ -204,11 +203,14 @@ const Profile: React.FC = () => {
           keyboardShouldPersistTaps="handled"
         >
           <Container>
-            <BackButton onPress={handleGoBack}>
+            <BackButton testID="go-back-button" onPress={handleGoBack}>
               <Icon name="chevron-left" size={24} color="#999591" />
             </BackButton>
 
-            <UserAvatarButton onPress={handleUpdateAvatar}>
+            <UserAvatarButton
+              testID="avatar-button"
+              onPress={handleUpdateAvatar}
+            >
               <UserAvatar source={{ uri: user.avatar_url }} />
               <CameraIcon>
                 <Icon name="camera" size={20} color="#312e38" />

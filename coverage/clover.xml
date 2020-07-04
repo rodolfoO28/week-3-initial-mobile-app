@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1593882728651" clover="3.2.0">
+  <project timestamp="1593882728651" name="All files">
+    <metrics statements="221" coveredstatements="221" conditionals="36" coveredconditionals="36" methods="82" coveredmethods="82" elements="339" coveredelements="339" complexity="0" loc="221" ncloc="221" packages="9" files="9" classes="9"/>
+    <package name="components.Button">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Volumes/MacintoshHD/www/bootcamp-go-stack/go-barber/mobile/src/components/Button/index.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="29" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Input">
+      <metrics statements="17" coveredstatements="17" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="7"/>
+      <file name="index.tsx" path="/Volumes/MacintoshHD/www/bootcamp-go-stack/go-barber/mobile/src/components/Input/index.tsx">
+        <metrics statements="17" coveredstatements="17" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="7"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="32" count="163" type="stmt"/>
+        <line num="34" count="163" type="cond" truecount="1" falsecount="0"/>
+        <line num="35" count="163" type="stmt"/>
+        <line num="37" count="163" type="stmt"/>
+        <line num="38" count="163" type="stmt"/>
+        <line num="40" count="163" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="44" count="163" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="49" count="163" type="stmt"/>
+        <line num="51" count="7" type="stmt"/>
+        <line num="55" count="163" type="stmt"/>
+        <line num="56" count="98" type="stmt"/>
+        <line num="71" count="163" type="stmt"/>
+        <line num="97" count="46" type="stmt"/>
+      </file>
+    </package>
+    <package name="hooks">
+      <metrics statements="26" coveredstatements="26" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="7"/>
+      <file name="auth.tsx" path="/Volumes/MacintoshHD/www/bootcamp-go-stack/go-barber/mobile/src/hooks/auth.tsx">
+        <metrics statements="26" coveredstatements="26" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="7"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="14" type="stmt"/>
+        <line num="41" count="14" type="stmt"/>
+        <line num="43" count="14" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="50" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="51" count="3" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="55" count="4" type="stmt"/>
+        <line num="58" count="4" type="stmt"/>
+        <line num="61" count="14" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
+        <line num="76" count="1" type="stmt"/>
+        <line num="82" count="14" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="85" count="1" type="stmt"/>
+        <line num="88" count="14" type="stmt"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="92" count="1" type="stmt"/>
+        <line num="100" count="14" type="stmt"/>
+        <line num="110" count="14" type="stmt"/>
+        <line num="112" count="14" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.AppointmentCreated">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="index.tsx" path="/Volumes/MacintoshHD/www/bootcamp-go-stack/go-barber/mobile/src/pages/AppointmentCreated/index.tsx">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.CreateAppointment">
+      <metrics statements="58" coveredstatements="58" conditionals="6" coveredconditionals="6" methods="27" coveredmethods="27"/>
+      <file name="index.tsx" path="/Volumes/MacintoshHD/www/bootcamp-go-stack/go-barber/mobile/src/pages/CreateAppointment/index.tsx">
+        <metrics statements="58" coveredstatements="58" conditionals="6" coveredconditionals="6" methods="27" coveredmethods="27"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="54" type="stmt"/>
+        <line num="48" count="54" type="stmt"/>
+        <line num="50" count="54" type="stmt"/>
+        <line num="51" count="54" type="stmt"/>
+        <line num="53" count="54" type="stmt"/>
+        <line num="54" count="54" type="stmt"/>
+        <line num="55" count="54" type="stmt"/>
+        <line num="58" count="54" type="stmt"/>
+        <line num="59" count="54" type="stmt"/>
+        <line num="60" count="54" type="stmt"/>
+        <line num="64" count="54" type="stmt"/>
+        <line num="66" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="70" count="12" type="stmt"/>
+        <line num="75" count="54" type="stmt"/>
+        <line num="76" count="12" type="stmt"/>
+        <line num="77" count="12" type="stmt"/>
+        <line num="81" count="54" type="stmt"/>
+        <line num="82" count="13" type="stmt"/>
+        <line num="91" count="12" type="stmt"/>
+        <line num="92" count="12" type="stmt"/>
+        <line num="96" count="54" type="stmt"/>
+        <line num="97" count="1" type="stmt"/>
+        <line num="100" count="54" type="stmt"/>
+        <line num="101" count="1" type="stmt"/>
+        <line num="104" count="54" type="stmt"/>
+        <line num="105" count="3" type="stmt"/>
+        <line num="108" count="54" type="stmt"/>
+        <line num="109" count="2" type="stmt"/>
+        <line num="112" count="54" type="stmt"/>
+        <line num="113" count="25" type="stmt"/>
+        <line num="114" count="14" type="stmt"/>
+        <line num="117" count="25" type="cond" truecount="2" falsecount="0"/>
+        <line num="120" count="54" type="stmt"/>
+        <line num="121" count="2" type="stmt"/>
+        <line num="122" count="2" type="stmt"/>
+        <line num="123" count="2" type="stmt"/>
+        <line num="124" count="2" type="stmt"/>
+        <line num="126" count="2" type="stmt"/>
+        <line num="131" count="1" type="stmt"/>
+        <line num="136" count="1" type="stmt"/>
+        <line num="143" count="54" type="stmt"/>
+        <line num="144" count="24" type="stmt"/>
+        <line num="145" count="120" type="stmt"/>
+        <line num="147" count="48" type="stmt"/>
+        <line num="155" count="54" type="stmt"/>
+        <line num="156" count="24" type="stmt"/>
+        <line num="157" count="120" type="stmt"/>
+        <line num="159" count="72" type="stmt"/>
+        <line num="167" count="54" type="stmt"/>
+        <line num="187" count="180" type="stmt"/>
+        <line num="189" count="90" type="stmt"/>
+        <line num="191" count="1" type="stmt"/>
+        <line num="234" count="120" type="stmt"/>
+        <line num="240" count="1" type="stmt"/>
+        <line num="257" count="180" type="stmt"/>
+        <line num="263" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.Dashboard">
+      <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
+      <file name="index.tsx" path="/Volumes/MacintoshHD/www/bootcamp-go-stack/go-barber/mobile/src/pages/Dashboard/index.tsx">
+        <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="10" type="stmt"/>
+        <line num="31" count="10" type="stmt"/>
+        <line num="32" count="10" type="stmt"/>
+        <line num="34" count="10" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="38" count="10" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="45" count="10" type="stmt"/>
+        <line num="46" count="5" type="stmt"/>
+        <line num="47" count="5" type="stmt"/>
+        <line num="51" count="10" type="stmt"/>
+        <line num="68" count="24" type="stmt"/>
+        <line num="73" count="12" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.Profile">
+      <metrics statements="49" coveredstatements="49" conditionals="10" coveredconditionals="10" methods="16" coveredmethods="16"/>
+      <file name="index.tsx" path="/Volumes/MacintoshHD/www/bootcamp-go-stack/go-barber/mobile/src/pages/Profile/index.tsx">
+        <metrics statements="49" coveredstatements="49" conditionals="10" coveredconditionals="10" methods="16" coveredmethods="16"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="12" type="stmt"/>
+        <line num="48" count="12" type="stmt"/>
+        <line num="50" count="12" type="stmt"/>
+        <line num="51" count="12" type="stmt"/>
+        <line num="52" count="12" type="stmt"/>
+        <line num="53" count="12" type="stmt"/>
+        <line num="55" count="12" type="stmt"/>
+        <line num="57" count="12" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="61" count="12" type="stmt"/>
+        <line num="63" count="5" type="stmt"/>
+        <line num="64" count="5" type="stmt"/>
+        <line num="66" count="5" type="stmt"/>
+        <line num="73" count="10" type="stmt"/>
+        <line num="81" count="10" type="stmt"/>
+        <line num="90" count="5" type="stmt"/>
+        <line num="100" count="4" type="stmt"/>
+        <line num="102" count="4" type="stmt"/>
+        <line num="114" count="4" type="stmt"/>
+        <line num="116" count="3" type="stmt"/>
+        <line num="118" count="3" type="stmt"/>
+        <line num="123" count="3" type="stmt"/>
+        <line num="125" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="126" count="1" type="stmt"/>
+        <line num="127" count="1" type="stmt"/>
+        <line num="129" count="1" type="stmt"/>
+        <line num="132" count="1" type="stmt"/>
+        <line num="141" count="12" type="stmt"/>
+        <line num="142" count="4" type="stmt"/>
+        <line num="150" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="151" count="1" type="stmt"/>
+        <line num="154" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="155" count="1" type="stmt"/>
+        <line num="156" count="1" type="stmt"/>
+        <line num="159" count="2" type="stmt"/>
+        <line num="169" count="2" type="stmt"/>
+        <line num="170" count="2" type="stmt"/>
+        <line num="176" count="2" type="stmt"/>
+        <line num="179" count="1" type="stmt"/>
+        <line num="180" count="1" type="stmt"/>
+        <line num="183" count="1" type="stmt"/>
+        <line num="193" count="12" type="stmt"/>
+        <line num="230" count="1" type="stmt"/>
+        <line num="242" count="1" type="stmt"/>
+        <line num="254" count="1" type="stmt"/>
+        <line num="265" count="1" type="stmt"/>
+        <line num="276" count="1" type="stmt"/>
+        <line num="279" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.SignIn">
+      <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
+      <file name="index.tsx" path="/Volumes/MacintoshHD/www/bootcamp-go-stack/go-barber/mobile/src/pages/SignIn/index.tsx">
+        <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="8" type="stmt"/>
+        <line num="42" count="8" type="stmt"/>
+        <line num="44" count="8" type="stmt"/>
+        <line num="46" count="8" type="stmt"/>
+        <line num="48" count="8" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="53" count="4" type="stmt"/>
+        <line num="60" count="4" type="stmt"/>
+        <line num="64" count="3" type="stmt"/>
+        <line num="69" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="76" count="1" type="stmt"/>
+        <line num="85" count="8" type="stmt"/>
+        <line num="114" count="1" type="stmt"/>
+        <line num="124" count="1" type="stmt"/>
+        <line num="127" count="3" type="stmt"/>
+        <line num="141" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.SignUp">
+      <metrics statements="24" coveredstatements="24" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="7"/>
+      <file name="index.tsx" path="/Volumes/MacintoshHD/www/bootcamp-go-stack/go-barber/mobile/src/pages/SignUp/index.tsx">
+        <metrics statements="24" coveredstatements="24" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="7"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="8" type="stmt"/>
+        <line num="37" count="8" type="stmt"/>
+        <line num="38" count="8" type="stmt"/>
+        <line num="40" count="8" type="stmt"/>
+        <line num="42" count="8" type="stmt"/>
+        <line num="44" count="4" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="47" count="4" type="stmt"/>
+        <line num="55" count="4" type="stmt"/>
+        <line num="59" count="3" type="stmt"/>
+        <line num="61" count="2" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
+        <line num="68" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="84" count="8" type="stmt"/>
+        <line num="110" count="1" type="stmt"/>
+        <line num="122" count="1" type="stmt"/>
+        <line num="133" count="1" type="stmt"/>
+        <line num="136" count="3" type="stmt"/>
+        <line num="144" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

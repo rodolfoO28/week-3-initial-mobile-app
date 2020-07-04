@@ -2,7 +2,6 @@
 
 # 🚀️ Initial Mobile App
 
-Project of week 3, create initial mobile app with react native. Follow the topics covered below:
 - Structure and standards
   - Structs Configurations
   - Style Patterns
@@ -24,6 +23,7 @@ Project of week 3, create initial mobile app with react native. Follow the topic
   - Private Routes
 
 # 🚀️ Finish Mobile App
+
 - Adjuts API
   - Intro
   - Serialize providers data
@@ -49,3 +49,11 @@ Project of week 3, create initial mobile app with react native. Follow the topic
   - Create profile page
   - Update profile data
   - Update avatar
+
+# 🚀️ Tests Mobile
+
+- Tests
+  - Configuration jest
+  - Create first test
+  - Generate coverage
+  - Create test components/pages/hooks
